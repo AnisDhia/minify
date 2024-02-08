@@ -6,7 +6,7 @@
                     {{ review.review }}
                 </p>
             </v-card-text>
-            <v-card-actions class="mt-sm-10">
+            <v-card-actions class="mt-10">
                 <v-row align="center" class="">
                     <!-- AVATAR & NAME -->
                     <!-- <v-col cols="12" md=""> -->
@@ -27,7 +27,7 @@
                     <!-- STARS -->
                     <!-- <v-col cols="12" md="6">  -->
                     <!-- <v-row align="center" :justify="smAndDown ? 'center' : 'end'" class="d-flex mt-1 mt-md-0"> -->
-                    <div class="d-flex my-6 my-md-0 px-6">
+                    <div class="d-flex my-6  px-6">
                         <p class="rating-text mr-4"> {{ review.rating }}</p>
                         <Rating />
                     </div>

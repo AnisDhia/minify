@@ -27,12 +27,12 @@
                         <v-icon :size="xs ? 'large' : 'x-large'" color="#676767">mdi-linkedin</v-icon>
                     </v-btn>
                 </div>
-                <div :class="{ 'text-center': xs }">
-                    <v-btn class="text-none mr-sm-3 mb-4 mb-sm-0 rounded-lg" :size="xs ? 'large' : 'x-large'" dark
+                <v-row :justify="xs ? 'center' : 'start'">
+                    <v-btn class="text-none ma-2 rounded-lg" :size="xs ? 'large' : 'x-large'" dark
                         prepend-icon="mdi-email-outline" variant="flat" color="#EEBF63" style="color: white">Mail Me</v-btn>
-                    <v-btn class="text-none mx-sm-3 rounded-lg" :size="xs ? 'large' : 'x-large'" dark
+                    <v-btn class="text-none ma-2 rounded-lg" :size="xs ? 'large' : 'x-large'" dark
                         prepend-icon="mdi-download" variant="outlined" style="border-color: #EEBF63;">Download CV</v-btn>
-                </div>
+                </v-row>
             </v-col>
             <v-col cols="12" md="6">
                 <v-img src="@/assets/home.png"></v-img>
@@ -52,7 +52,8 @@ export default {
         LineVector,
     },
     setup() {
-        const { xs } = useDisplay()
+        const { xs, sm } = useDisplay()
+        console.log('sm:' + sm.value + ' xs:' + xs.value)
         return {
             xs
         }

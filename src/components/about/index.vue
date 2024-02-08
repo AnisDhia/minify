@@ -44,10 +44,10 @@ export default {
 h1 {
     color: #2F2F2F;
     font-weight: 600;
-    font-size: 72px;
+    font-size: 4.5rem;
     font-family: 'Poppins';
     letter-spacing: 1px;
-    line-height: 72px;
+    line-height: 4.5rem;
 }
 
 .plus {
@@ -57,13 +57,13 @@ h1 {
 .ablus {
     color: #2F2F2F;
     font-weight: 600;
-    font-size: 48px;
+    font-size: 3rem;
 }
 
 h2 {
     color: #2F2F2F;
     font-weight: 600;
-    font-size: 48px;
+    font-size: 3rem;
     font-family: 'Poppins';
     letter-spacing: 1px;
 }
@@ -71,7 +71,7 @@ h2 {
 p {
     color: #828282;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: 'Poppins';
     letter-spacing: 1px;
     line-height: 1.7;

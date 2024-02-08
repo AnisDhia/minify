@@ -1,14 +1,15 @@
 <template>
     <section>
-        <v-card color="#EEBF63" class="rounded-xl" style="padding: 5%;" :style="{ 'padding-left': smAndDown ? '5%' : '8%' }">
+        <v-card color="#EEBF63" class="rounded-xl" style="padding: 5%;"
+            :style="{ 'padding-left': smAndDown ? '5%' : '8%' }">
             <v-row align="center" justify="center">
                 <v-col cols="12" md="4" :class="{ 'text-center': smAndDown }">
-                    <h1>Interested working <br class="d-none d-md-flex" /> with me?</h1>
+                    <h1 style="word-wrap: normal;">Interested working <br class="d-none d-md-flex" /> with me?</h1>
                 </v-col>
                 <v-col cols="12" md="8" class="text-center">
-                    <v-btn class="baton text-none mr-sm-3 mb-4 mb-sm-0 rounded-lg" size="x-large" dark
-                        prepend-icon="mdi-email-outline" variant="flat" color="white">Email Me</v-btn>
-                    <v-btn class="baton text-none mx-sm-3 rounded-lg" size="x-large" color="white" variant="outlined"
+                    <v-btn class="baton text-none ma-2 rounded-lg" size="x-large" dark prepend-icon="mdi-email-outline"
+                        variant="flat" color="white">Email Me</v-btn>
+                    <v-btn class="baton text-none ma-2 rounded-lg" size="x-large" color="white" variant="outlined"
                         style="border: solid 2px white;">See More
                         Projects</v-btn>
                 </v-col>

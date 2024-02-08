@@ -1,6 +1,6 @@
 <template>
   <v-app v-scroll="onScroll">
-    <Navigation :flat="flat" :color="color" :active="active"/>
+    <Navigation :flat="flat" :color="color" :active="active" />
     <v-main>
       <Home id="home" v-intersect="{ handler: onIntersect, options: { threshold: 0.7 } }" />
       <About id="about" v-intersect="{ handler: onIntersect, options: { threshold: 0.7 } }" />
@@ -63,7 +63,6 @@ export default {
       if (isIntersecting) {
         this.active = entries[0].target.id
       }
-      console.log(this.active)
     },
   },
 }
@@ -95,6 +94,13 @@ export default {
    display: flex;
    justify-content: center;
    align-items: center;
+ }
+
+ @media screen and (max-width: 768px) {
+   .swiper-pagination {
+     margin-top: 10%;
+   }
+
  }
 
  .swiper-pagination-bullet {
