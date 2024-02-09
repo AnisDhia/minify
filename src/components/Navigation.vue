@@ -1,7 +1,7 @@
 <template>
     <v-navigation-drawer v-model="drawer" app temporary class="elevation-0 mb-0">
         <v-container>
-            <h1>Ariene Rey</h1>
+            <h1 @click="goTo(0, scrollOptions)">Ariene Rey</h1>
             <v-divider class="my-4" />
             <v-list dense>
                 <v-list-subheader>LINKS</v-list-subheader>
@@ -17,7 +17,7 @@
     </v-navigation-drawer>
 
     <v-app-bar app :color="color" :flat="flat" class="app-bar" :class="{ shrink: !flat }">
-        <h1>Ariene Rey</h1>
+        <h1 @click="goTo(0)">Ariene Rey</h1>
         <v-spacer />
         <v-app-bar-nav-icon @click.stop="drawer = !drawer" v-if="xs" class="ma-0"/>
         <div v-else v-for="(item, index) in items" :key="index">

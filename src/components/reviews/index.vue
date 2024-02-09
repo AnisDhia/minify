@@ -52,9 +52,9 @@ export default {
                 {
                     avatar: 'avatar-2.jpeg',
                     name: 'Marianne Williamson',
-                    role: 'Product Manager',
-                    rating: 5,
-                    review: 'Fellow has been a game-changer for our team. It’s helped us stay aligned and connected.'
+                    role: 'UI/UX Designer',
+                    rating: 4.5,
+                    review: 'It provides an amazing platform for constant conversations and direct feedback between managers and direct reports.'
                 },
                 {
                     avatar: 'avatar-3.jpeg',

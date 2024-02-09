@@ -26,7 +26,7 @@
                     <!-- STARS -->
                     <div class="d-flex my-6  px-6">
                         <p class=" rating-text mr-3"> {{ review.rating }}</p>
-                        <v-rating class="" :model-value="review.rating" half-increments>
+                        <v-rating readonly class="" :model-value="review.rating" half-increments>
                             <template v-slot:item="props">
                                 <v-icon class="mx-1" :color="props.isFilled || props.isHalf ? '#F5BF75' : '#C4C4C4'"
                                     size="large" @click="props.onClick">
