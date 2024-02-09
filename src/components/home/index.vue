@@ -24,7 +24,7 @@
                         <v-icon :size="xs ? 'large' : 'x-large'" color="#676767">mdi-youtube</v-icon>
                     </v-btn>
                     <v-btn flat icon>
-                        <v-icon :size="xs ? 'large' : 'x-large'" color="#676767">mdi-linkedin</v-icon>
+                        <v-icon :size="xs ? 'large' : 'x-large'" color="#676767">custom:dribble</v-icon>
                     </v-btn>
                 </div>
                 <v-row :justify="xs ? 'center' : 'start'">

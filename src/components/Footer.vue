@@ -13,7 +13,7 @@
                         <v-icon size="x-large" color="#676767">mdi-youtube</v-icon>
                     </v-btn>
                     <v-btn class="mx-1" flat icon>
-                        <v-icon size="x-large" color="#676767">mdi-linkedin</v-icon>
+                        <v-icon size="x-large" color="#676767">custom:dribble</v-icon>
                     </v-btn>
                 </div>
             </v-col>

@@ -23,18 +23,18 @@
                             </p>
                         </div>
                     </v-row>
-                    <!-- </v-col> -->
                     <!-- STARS -->
-                    <!-- <v-col cols="12" md="6">  -->
-                    <!-- <v-row align="center" :justify="smAndDown ? 'center' : 'end'" class="d-flex mt-1 mt-md-0"> -->
                     <div class="d-flex my-6  px-6">
-                        <p class="rating-text mr-4"> {{ review.rating }}</p>
-                        <Rating />
+                        <p class=" rating-text mr-3"> {{ review.rating }}</p>
+                        <v-rating class="" :model-value="review.rating" half-increments>
+                            <template v-slot:item="props">
+                                <v-icon class="mx-1" :color="props.isFilled || props.isHalf ? '#F5BF75' : '#C4C4C4'"
+                                    size="large" @click="props.onClick">
+                                    {{ props.isHalf ? 'custom:star-half' : 'custom:star-full' }}
+                                </v-icon>
+                            </template>
+                        </v-rating>
                     </div>
-                    <!-- <v-rating :model-value="review.rating" :size="24" readonly color="#C4C4C4" active-color="#F5BF75"
-                            half-increments empty-icon="mdi-star"></v-rating> -->
-                    <!-- </v-row> -->
-                    <!-- </v-col> -->
                 </v-row>
             </v-card-actions>
         </v-card>
@@ -43,12 +43,12 @@
 
 <script>
 import { useDisplay } from 'vuetify/lib/framework.mjs';
-import Rating from '../about/Rating.vue';
+// import Rating from '../about/Rating.vue';
 
 export default {
     name: 'ReviewCard',
     components: {
-        Rating
+        // Rating,
     },
     props: {
         review: {
@@ -91,6 +91,7 @@ export default {
     color: #2F2F2F;
     font-size: 1rem;
     font-weight: 600;
+    line-height: 2rem;
 }
 
 @media screen and (max-width: 960px) {
