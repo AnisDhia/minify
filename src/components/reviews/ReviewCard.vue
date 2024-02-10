@@ -7,7 +7,7 @@
                 </p>
             </v-card-text>
             <v-card-actions class="mt-10">
-                <v-row align="center" class="">
+                <v-row align="center" class="d-block d-lg-flex">
                     <!-- AVATAR & NAME -->
                     <!-- <v-col cols="12" md=""> -->
                     <v-row align="center" class="ml-4 ml-sm-1">
@@ -24,12 +24,12 @@
                         </div>
                     </v-row>
                     <!-- STARS -->
-                    <div class="d-flex my-6  px-6">
+                    <div class="d-flex my-6 px-6">
                         <p class=" rating-text mr-3"> {{ review.rating }}</p>
                         <v-rating readonly class="" :model-value="review.rating" half-increments>
                             <template v-slot:item="props">
                                 <v-icon class="mx-1" :color="props.isFilled || props.isHalf ? '#F5BF75' : '#C4C4C4'"
-                                    size="large" @click="props.onClick">
+                                    :size="mdAndDown ? 'small' : 'large'" @click="props.onClick">
                                     {{ props.isHalf ? 'custom:star-half' : 'custom:star-full' }}
                                 </v-icon>
                             </template>
@@ -57,9 +57,10 @@ export default {
         }
     },
     setup() {
-        const { xs, smAndDown } = useDisplay();
+        const { xs, smAndDown, mdAndDown } = useDisplay();
+        console.log('mdAndDown', mdAndDown.value);
         return {
-            xs, smAndDown
+            xs, smAndDown, mdAndDown
         }
     }
 }
@@ -77,6 +78,10 @@ export default {
     color: #2F2F2F;
     font-weight: 600;
     font-size: 1rem;
+    /* white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+
     /* line-height: 1.75rem; */
 }
 
